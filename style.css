@@ -1,33 +1,36 @@
-
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
-  background: linear-gradient(180deg, #000 0%, #111 100%);
+  background: url('images/background.png') center center / cover no-repeat fixed;
   color: #eee;
 }
+
 header {
-  background: url('images/background.png') center/cover no-repeat;
   padding: 6rem 2rem 4rem;
   text-align: center;
-  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
 }
+
 header img.logo {
   width: 200px;
   max-width: 80%;
   margin-bottom: 1.5rem;
 }
+
 header h1 {
   font-size: 3.2rem;
   color: #FFD700;
   text-shadow: 2px 2px 10px #000;
   margin-bottom: 0.5rem;
 }
+
 header p {
   font-size: 1.2rem;
   color: #ccc;
   max-width: 700px;
   margin: 0 auto;
 }
+
 .cta {
   margin-top: 2rem;
   display: inline-block;
@@ -35,35 +38,50 @@ header p {
   background-color: #FFD700;
   color: #000;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 12px;
   font-weight: bold;
   box-shadow: 0 0 10px #FFD700;
 }
+
 .section {
   padding: 4rem 2rem;
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
 }
-.section h2 {
+
+.card {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  margin-bottom: 3rem;
+}
+
+.card h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #FFD700;
 }
-.section p {
+
+.card p, .card ul {
   line-height: 1.6;
+  color: #ddd;
 }
+
 ul {
   list-style: none;
   padding-left: 0;
 }
+
 ul li::before {
   content: "🔥";
   margin-right: 0.5rem;
 }
+
 footer {
   text-align: center;
   padding: 2rem;
-  background-color: #000;
-  color: #888;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #aaa;
   font-size: 0.9rem;
 }
