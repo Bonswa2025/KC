@@ -56,51 +56,13 @@
        <section id="raiderio-section" style="margin-top: 50px; text-align: center;">
   <h2>Laatste Mythic+ keys (Ravage - Twisting Nether)</h2>
   <div id="recent-keys" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;"></div>
+<footer style="margin-top: 50px; display: flex; flex-direction: column; align-items: center;">
+  <h2>Onze Discord</h2>
+  <iframe src="https://discord.com/widget?id=JOUWSERVERID&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"
+    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+</footer>
+        
 </section>
-
-<script>
-  async function fetchRaiderIOData() {
-    const response = await fetch("https://raider.io/api/v1/characters/profile?region=eu&realm=twisting-nether&name=ravage&fields=mythic_plus_recent_runs");
-    const data = await response.json();
-
-    const container = document.getElementById("recent-keys");
-    container.innerHTML = "";
-
-    data.mythic_plus_recent_runs.slice(0, 5).forEach(run => {
-      const runDiv = document.createElement("div");
-      runDiv.style.background = "#2c2f33";
-      runDiv.style.padding = "15px";
-      runDiv.style.borderRadius = "10px";
-      runDiv.style.color = "white";
-      runDiv.style.width = "250px";
-
-      runDiv.innerHTML = `
-        <strong>${run.dungeon}</strong><br>
-        Key: +${run.mythic_level}<br>
-        Tijd: ${run.clear_time_ms / 60000} min<br>
-        Score: ${run.score.toFixed(1)}<br>
-        <small>${new Date(run.completed_at).toLocaleString()}</small>
-      `;
-
-      container.appendChild(runDiv);
-    });
-  }
-
-  fetchRaiderIOData();
-</script>
-🔧 Tot slot: CSS voor 2 kolommen van de vakken
-Zorg dat je je vakken in een container hebt zoals eerder vermeld, dan voeg je in je CSS dit toe:
-
-css
-Kopiëren
-Bewerken
-.vakken-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-          </div>
-  </section>
 
   <footer>
     © 2025 Keystone Crushers. Not affiliated with Blizzard Entertainment.
