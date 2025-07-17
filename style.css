@@ -85,3 +85,18 @@ footer {
   color: #aaa;
   font-size: 0.9rem;
 }
+.member-counter {
+  text-align: center;
+}
+
+.member-count {
+  font-size: 3rem;
+  color: #FFD700;
+  font-weight: bold;
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 0 10px #000;
+}
