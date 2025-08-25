@@ -17,7 +17,6 @@ header {
   padding: 40px 0;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
-  height: 40vh;
 }
 
 header img.logo {
@@ -184,5 +183,6 @@ footer {
   display: inline-block;
   box-shadow: 0 0 10px #000;
 }
+
 
 
