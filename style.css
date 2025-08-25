@@ -17,7 +17,7 @@ header {
   padding: 40px 0;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
-  height: 42vh;
+  height: 37vh;
 }
 
 header img.logo {
@@ -56,7 +56,7 @@ header p {
   padding: 4rem 2rem;
   max-width: 70vw;
   margin: auto;
-  height: 30vh;
+  height: 10vh;
 
   display: flex;
   gap: 2rem;
@@ -184,6 +184,7 @@ footer {
   display: inline-block;
   box-shadow: 0 0 10px #000;
 }
+
 
 
 
