@@ -68,4 +68,33 @@ document.addEventListener("DOMContentLoaded", () => {
   updateControls();
 });
 
+const sections = document.querySelectorAll(".section, header");
+const dots = document.querySelectorAll(".scrollbar li");
 
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        dots.forEach((dot) => dot.classList.remove("active"));
+        const activeDot = document.querySelector(
+          `.scrollbar li[data-target="#${entry.target.id}"]`
+        );
+        if (activeDot) activeDot.classList.add("active");
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+sections.forEach((section) => observer.observe(section));
+
+dots.forEach((dot) => {
+  dot.addEventListener("click", () => {
+    const target = document.querySelector(dot.dataset.target);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
+script.js
+3 KB
