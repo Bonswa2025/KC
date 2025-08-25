@@ -185,6 +185,12 @@ footer {
   box-shadow: 0 0 10px #000;
 }
 
+.card iframe {
+  display: block;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #000;
+}
 
 
 
