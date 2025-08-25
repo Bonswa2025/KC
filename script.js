@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const videoIds = ["xygQUxvh5KI"]; // Add video ids on youtube that you want here
+  const videoIds = ["ui98lNylzBA"]; // Add video ids on youtube that you want here
 
   const inner = document.querySelector(".video-carousel .carousel-inner");
   const prevBtn = document.querySelector(".video-carousel .prev");
@@ -67,4 +67,5 @@ document.addEventListener("DOMContentLoaded", () => {
   loadIframe(0);
   updateControls();
 });
+
 
